@@ -1,0 +1,226 @@
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "WandohopeB";
+  background-color: #ecf0f1;
+  color: white;
+}
+
+@font-face {
+  font-family: "WandohopeB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.form,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.menu {
+  transition: all 0.4s;
+  margin: 10px;
+}
+
+.js-clock {
+  position: absolute;
+  top: 10vh;
+  z-index: 1;
+  left: calc(50% - 120px);
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.clock-mode {
+  left: calc(50% - 240px);
+  top: 25vh;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.js-clock h1 {
+  font-size: 100px;
+  margin: 0;
+  transition: all 0.6s;
+}
+
+.clock-mode-title {
+  font-size: 200px !important;
+}
+
+.second {
+  font-size: 30px;
+}
+
+.search {
+  transition: all 0.6s;
+  display: flex;
+}
+
+i {
+  height: fit-content;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: all 0.4s;
+}
+
+.rotate {
+  transform: rotate(0.5turn);
+}
+
+.greeting {
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.weather-container {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.weather-container:hover {
+  opacity: 1;
+}
+
+.weather-container span {
+  font-style: italic;
+  font-size: 15px;
+}
+
+button {
+  font-family: "WandohopeB";
+  color: white;
+  margin-right: 0px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+input {
+  font-family: "WandohopeB";
+  background: none;
+  appearance: none;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 1.3em;
+  color: white;
+  transition: all 0.6s;
+}
+
+.search input {
+  width: 100%;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.pending,
+.finished {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 20px;
+  width: 230px;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px 0;
+  height: 30vh;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.remove-btn {
+  font-family: "WandohopeB";
+  font-size: 15px;
+  margin: 10px 0;
+  padding: 0;
+  color: white;
+}
+
+.pending h2,
+.finished h2 {
+  margin: 5px 0;
+}
+
+.pending-list,
+.finished-list {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.none {
+  display: none;
+}
+
+span {
+  font-size: 20px;
+}
+
+.close {
+  transform: translate(-50%);
+}
+
+.close-btn,
+.open-btn {
+  font-size: 30px;
+  position: absolute;
+  top: 45vh;
+}
+
+.close-btn {
+  left: 250px;
+}
+
+.open-btn {
+  left: 1%;
+}

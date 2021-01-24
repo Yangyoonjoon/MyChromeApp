@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tab</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/afb19fe50c.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="js-clock clock-mode">
+      <h1 class="clock-mode-title"></h1>
+      <div class="search opacity-0">
+        <form class="google">
+          <input type="text" placeholder="Google Search" />
+        </form>
+        <form class="naver none">
+          <input type="text" placeholder="Naver Search" />
+        </form>
+        <i class="fas fa-sync-alt rotate1"></i>
+      </div>
+    </div>
+    <div class="menu opacity-0">
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h2 class="js-greetings greeting"></h2>
+      <div class="pending">
+        <h2>ToDos</h2>
+        <ul class="pending-list"></ul>
+      </div>
+      <div class="finished">
+        <h2>Finished</h2>
+        <ul class="finished-list"></ul>
+      </div>
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Write a To Do here" />
+      </form>
+      <button class="remove-btn">Remove ToDos ❌</button>
+      <div>Clock Mode => Click Clock !!</div>
+    </div>
+    <div class="weather-container none">
+      <span class="js-weather"></span>
+    </div>
+    <button class="close-btn opacity-0"><</button>
+    <button class="open-btn none opacity-0">></button>
+
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
