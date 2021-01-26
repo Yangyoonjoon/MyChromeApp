@@ -178,7 +178,7 @@ button:focus {
   align-items: center;
 }
 
-.remove-btn {
+.delete-todo-btn {
   font-family: "WandohopeB";
   font-size: 15px;
   margin: 10px 0;

@@ -2,7 +2,7 @@ const toDoForm = document.querySelector(".js-toDoForm"),
   toDoInput = toDoForm.querySelector("input"),
   pendingList = document.querySelector(".pending-list"),
   finishedList = document.querySelector(".finished-list"),
-  removeBtn = document.querySelector(".remove-btn");
+  removeBtn = document.querySelector(".delete-todo-btn");
 
 const PENDING = "PENDING",
   FINISHED = "FINISHED";

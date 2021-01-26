@@ -133,7 +133,7 @@ function paintRecentSearches(searches) {
     }
 
     const div = document.createElement("div");
-    div.innerText = "delete all recent searches";
+    div.innerText = "Delete All Browsing History";
     div.className = "del-searches";
     div.addEventListener("click", deleteRecentSearches);
     recentSearches.appendChild(div);
