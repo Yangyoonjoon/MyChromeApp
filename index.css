@@ -224,3 +224,49 @@ span {
 .open-btn {
   left: 1%;
 }
+
+.google-recent-searches li,
+.naver-recent-searches li {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  margin-top: 7px;
+  padding-left: 10px;
+  transition: all 0.4s;
+  height: 30px;
+  color: #333;
+  animation: spread-open 1s;
+}
+
+.google-recent-searches li:hover,
+.naver-recent-searches li:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.del-searches {
+  animation: spread-open 1s;
+  text-align: end;
+}
+
+.spread-out {
+  animation: spread-out 1s !important;
+}
+
+@keyframes spread-open {
+  0% {
+    transform: translate(0, -15px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spread-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, -15px);
+    opacity: 0;
+  }
+}
